@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-
+"use strict";
+exports.__esModule = true;
+var jsx_runtime_1 = require("react/jsx-runtime");
+require("./App.css");
+var Stars_1 = require("./components/Stars");
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsx)(Stars_1.Stars, { count: 5 }) }));
 }
-
-export default App;
+exports["default"] = App;
